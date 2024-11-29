@@ -6,11 +6,36 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: auto auto;
 }
 
-header, footer {
+header,
+footer {
   background-color: #6c63ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  padding: 100px 0 146px;
+}
+
+.header__wrapper {
   height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  height: 100%;
 }
 
 .login-btn {
@@ -32,14 +57,27 @@ h1 {
   font-size: 44px;
   text-transform: uppercase;
   color: #2f2e41;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   border: 2px solid #e7e7e7;
   border-radius: 5px;
-  width: 370px;
-  height: 552px;
+  width: 330px;
   background-color: #fff;
+  padding: 46px 20px;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .card-text {
@@ -61,4 +99,74 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   color: #2f2e41;
+  margin-bottom: 40px;
+}
+
+.card-img {
+  margin-bottom: 36px;
+  height: 200px;
+  width: 262px;
+  object-fit: cover;
+}
+
+.footer_wrapper {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.footer__link {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.footer__link img {
+  margin-right: 10px;
+}
+
+.footer__link a {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 46px 0 50px;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 46px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    width: 160px;
+  }
+
+  .h1 {
+    font-size: 24px;
+    margin-bottom: 46px;
+  }
 }
